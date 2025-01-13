@@ -1,0 +1,1 @@
+Saddle Point : is a point where a funciton has minima in one direction and maxima in another direction
