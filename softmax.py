@@ -13,3 +13,14 @@ sigma = num/den
 
 print(sigma)
 print(np.sum(sigma)) ## always sums to 1
+
+## using tensor
+
+softfun = nn.Softmax(dim=0)
+## Applying data to function
+sigmaT = softfun(torch.Tensor(z))
+print(sigmaT)
+
+plt.plot(sigma, sigmaT,'ko')
+plt.xlabel('"Manual" softmax')
+plt.ylabel('Pytorch nn.softmax')
